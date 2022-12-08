@@ -44,32 +44,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/linearBacaanShalat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/ic_doa" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Niat Bacaan Shalat"
-                    android:textColor="@android:color/black"
-                    android:textSize="25sp"
-                    android:fontFamily="cursive"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-            <LinearLayout
                 android:id="@+id/linearNiatShalat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

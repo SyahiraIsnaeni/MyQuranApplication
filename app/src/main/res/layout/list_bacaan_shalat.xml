@@ -1,93 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="4dp"
-    app:contentPadding="10dp">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_centerInParent="true"
+    android:gravity="center">
     <RelativeLayout
+        android:layout_centerInParent="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="425dp"
+        android:layout_marginTop="250dp">
 
-        <RelativeLayout
-            android:id="@+id/relativeRow"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/bg_row">
-
-            <TextView
-                android:id="@+id/txtId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:textColor="@android:color/black"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-
-        </RelativeLayout>
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginStart="10dp"
-            android:layout_toEndOf="@id/relativeRow"
-            android:orientation="vertical">
+            android:layout_height="425dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
+            card_view:cardCornerRAdius="5dp">
 
-            <TextView
-                android:id="@+id/txtName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:text="@string/app_name"
-                android:textColor="@color/colorPrimaryDark"
-                android:textIsSelectable="true"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:src="@drawable/syahira"
+                android:padding="5dp"
+                android:layout_width="98dp"
+                android:layout_height="98dp"
+                android:layout_marginStart="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="23dp"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/txtArabic"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/app_name"
-                    android:textColor="@android:color/black"
-                    android:textSize="14sp" />
+                    android:layout_marginTop="15dp"
+                    android:gravity="left"
+                    android:text="Syahira Isnaeni Dewi"
+                    android:textColor="#42354A"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="120dp"/>
 
                 <TextView
-                    android:id="@+id/txtLatin"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:text="@string/app_name"
-                    android:textColor="@android:color/black"
-                    android:textSize="14sp"
-                    android:textStyle="italic" />
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left"
+                    android:text="21120120130084"
+                    android:textColor="#42354A"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:layout_marginStart="120dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#79D6D1D1" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:padding="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:padding="3dp"
+                            android:src="@drawable/birthdate"
+                            android:layout_marginStart="5dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+                        <TextView
+                            android:text="Birth Date"
+                            android:layout_marginStart="10dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#42354A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="Jakarta, 15 Juli 2002"
+                        android:textColor="#42354A"
+                        android:textSize="15sp"
+                        android:layout_marginStart="47dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:padding="2dp"
+                        android:src="@drawable/address"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+                    <TextView
+                        android:text="Address"
+                        android:layout_marginStart="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textColor="#42354A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
 
                 <TextView
-                    android:id="@+id/txtTerjemahan"
+                    android:text="Jl. Walang Timur No.27"
+                    android:textColor="#42354A"
+                    android:textSize="15sp"
+                    android:layout_marginStart="47dp"
+                    android:layout_marginBottom="15dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/app_name"
-                    android:textColor="@android:color/black"
-                    android:textSize="12sp" />
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:padding="2dp"
+                        android:src="@drawable/email"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+                    <TextView
+                        android:text="Email"
+                        android:layout_marginStart="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textColor="#42354A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="syahiraisnaeni@gmail.com"
+                    android:textColor="#42354A"
+                    android:textSize="15sp"
+                    android:layout_marginStart="47dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:padding="2dp"
+                        android:src="@drawable/animal"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+                    <TextView
+                        android:text="Favorite Animal"
+                        android:layout_marginStart="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textColor="#42354A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Lion"
+                    android:textColor="#42354A"
+                    android:textSize="15sp"
+                    android:layout_marginStart="47dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
             </LinearLayout>
 
-
-        </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
 
-</androidx.cardview.widget.CardView>
+</RelativeLayout>

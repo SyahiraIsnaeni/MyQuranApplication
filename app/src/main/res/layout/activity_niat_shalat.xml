@@ -37,7 +37,7 @@
                 android:layout_gravity="end"
                 android:elevation="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_shalat"
+                android:src="@drawable/shalat"
                 app:riv_corner_radius_bottom_left="40dp"
                 app:riv_corner_radius_bottom_right="40dp"
                 app:riv_corner_radius_top_left="40dp" />
@@ -46,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="210dp"
                 android:layout_gravity="bottom"
-                android:background="@drawable/bg_rounded_all"
+                android:background="@drawable/bg_circle_radius_primary"
                 android:gravity="bottom"
                 android:orientation="vertical">
 

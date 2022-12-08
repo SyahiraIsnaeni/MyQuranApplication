@@ -38,14 +38,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             when(it.itemId){
 
                 R.id.about -> startActivity(Intent(this@MainActivity, AboutActivity::class.java))
-
                 else -> {}
             }
             true
         }
 
         linearNiatShalat.setOnClickListener(this)
-        linearBacaanShalat.setOnClickListener(this)
         linearAlquran.setOnClickListener (this)
 
     }
@@ -55,10 +53,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.linearNiatShalat -> {
                 val intentNiat = Intent(this@MainActivity, NiatShalatActivity::class.java)
                 startActivity(intentNiat)
-            }
-            R.id.linearBacaanShalat -> {
-                val intentBacaan = Intent(this@MainActivity, BacaanShalatActivity::class.java)
-                startActivity(intentBacaan)
             }
             R.id.linearAlquran -> {
                 val intentAlquran = Intent(this@MainActivity, ListSurahActivity::class.java)
